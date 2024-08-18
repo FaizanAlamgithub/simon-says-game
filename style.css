@@ -1,0 +1,82 @@
+/* body {
+  text-align: center;
+} */
+
+.form-container {
+  text-align: center;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(206, 37, 37);
+  border: 5px solid black;
+  border-radius: 25px;
+  margin: 1.5rem;
+}
+
+.red {
+  background-color: #ff3933;
+}
+.yellow {
+  background-color: #f5b041;
+}
+.purple {
+  background-color: #8570ac;
+}
+.blue {
+  background-color: #3498db;
+}
+
+.flash {
+  background-color: white;
+}
+
+.userflash {
+  background-color: #27ae60;
+}
+
+.startgame {
+  background-color: #27ae60;
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.side {
+  text-align: right;
+  margin: 12px 13px;
+  position: absolute;
+}
+
+/* Center .side on mobile devices (max-width: 600px) */
+@media screen and (max-width: 600px) {
+  .side {
+    position: static; /* Reset position to default flow */
+    margin: 0 auto; /* Center horizontally */
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5rem;
+    margin-left: 112px;
+  }
+  .startgame {
+    margin-right: 10px;
+  }
+}
+
+/* Side position for desktop devices (min-width: 601px) */
+@media screen and (min-width: 601px) {
+  .side {
+    position: absolute;
+    right: 0;
+    margin: 12px 13px;
+  }
+}
